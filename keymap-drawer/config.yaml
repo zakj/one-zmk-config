@@ -1,107 +1,55 @@
-# configuration for https://github.com/caksoylar/keymap-drawer
 parse_config:
   raw_binding_map:
-    '&sys_reset': Reset
-    '&bootloader': Boot
-    '&swapper': Win Next
-    '&caps_word': Caps Word
-    '&inv_qm': ¿
+    "&sys_reset": Reset
+    "&bootloader": Boot
+    "&u_bootloader": $$tabler:progress-down$$
 
-    '&kp LC(LG(LEFT))': Desk Left
-    '&kp LC(LG(RIGHT))': Desk Right
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-    '&kp LG(L)': Lock
+    "&kp LA(LGUI)": "⌥⌘"
+    "&kp RA(RGUI)": "⌘⌥"
 
-    '&out OUT_USB': Out USB
-    '&out OUT_BLE': Out BLE
-
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
-
-    '&mmv MOVE_UP': Mouse ↑
-    '&mmv MOVE_DOWN': Mouse ↓
-    '&mmv MOVE_LEFT': Mouse ←
-    '&mmv MOVE_RIGHT': Mouse →
-
-    '&msc SCRL_UP': Scroll ↑
-    '&msc SCRL_DOWN': Scroll ↓
-    '&msc SCRL_LEFT': Scroll ←
-    '&msc SCRL_RIGHT': Scroll →
-
-    '&mkp LCLK': Left Click
-    '&mkp RCLK': Right Click
-    '&mkp MCLK': Middle Click
-    '&mkp MB4': Back Click
-    '&mkp MB5': Forward Click
+    "&bt BT_CLR": $$tabler:bluetooth-x$$
+    "&bt BT_SEL 0": { t: "$$tabler:bluetooth$$", h: 0 }
+    "&bt BT_SEL 1": { t: "$$tabler:bluetooth$$", h: 1 }
+    "&bt BT_SEL 2": { t: "$$tabler:bluetooth$$", h: 2 }
+    "&bt BT_SEL 3": { t: "$$tabler:bluetooth$$", h: 3 }
+    "&bt BT_SEL 4": { t: "$$tabler:bluetooth$$", h: 4 }
+    "&bt BT_SEL 5": { t: "$$tabler:bluetooth$$", h: 5 }
 
   zmk_combos:
-    combo_tab:    {align: top, o: 0.15}
-    combo_del:    {align: top, o: 0.15}
-    combo_f12:    {align: bottom}
-    combo_btclr:  {align: bottom}
-    combo_play:   {align: right}
-    combo_capswd: {draw_separate: true}
-    combo_semi:   {draw_separate: true}
-    combo_grave:  {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
-    combo_rpar:   {draw_separate: true}
-    combo_lbkt:   {draw_separate: true}
-    combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
-    combo_esc:    {draw_separate: true}
-    combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
-    combo_bslh:   {draw_separate: true}
-    combo_slsh:   {draw_separate: true}
+    space_hold: {align: bottom}
+    l_cmd_opt: {align: top}
+    r_cmd_opt: {align: top}
 
   zmk_keycode_map:
-    # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
-    C_AL_CALC: Calc
-    C_PP: Play Pause
-
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-    ESC: Esc
-    SPACE: ␣
-    BSPC: ⌫
-    RET: ⏎
-    TAB: ↹
-    DEL: ⌦
-
-    PG_UP: Page Up
-    PG_DN: Page Down
-    INS: Insert
-    HOME: Home
-    END: End
-    CAPS: Caps Lock
-    PSCRN: Print Scrn
-    PAUSE_BREAK: Pause Break
-
-    UP: ↑
-    DOWN: ↓
-    LEFT: ←
-    RIGHT: →
-
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    LC(LA(LS(LGUI))): $$mdi:rhombus$$
+    BSPC: $$tabler:backspace$$
+    DEL: $$tabler:square-x$$
+    # ESC: $$mdi:keyboard-esc$$
+    RET: $$tabler:corner-down-left$$
+    SPACE: $$tabler:space$$
+    TAB: $$tabler:arrow-bar-to-right$$
+    F14: $$tabler:brightness-down$$
+    F15: $$tabler:brightness-up$$
+    K_MUTE: $$tabler:volume-3$$
+    C_VOL_DN: $$tabler:volume-2$$
+    C_VOL_UP: $$tabler:volume$$
+    C_NEXT: $$tabler:player-skip-forward$$
+    C_PREV: $$tabler:player-skip-back$$
+    C_PP: $$tabler:player-play$$
+    UP: $$tabler:arrow-up$$
+    RIGHT: $$tabler:arrow-right$$
+    DOWN: $$tabler:arrow-down$$
+    LEFT: $$tabler:arrow-left$$
+    "LS(LG(LBKT))": "PREV TAB"
+    "LS(LG(RBKT))": "NEXT TAB"
 
     # defaults
     AMPERSAND: '&'
@@ -169,5 +117,5 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
 draw_config:
-  footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+  footer_text: 'zakj/one-zmk-config'
   dark_mode: auto
