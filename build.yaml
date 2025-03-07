@@ -6,4 +6,11 @@ include:
     shield: ergonaut_one_right
     artifact-name: ergonaut-one-right
   - board: seeeduino_xiao_ble
+    shield: ergonaut_one_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: ergonaut-one-left-with-dongle
+  - board: seeeduino_xiao_ble
+    shield: ergonaut_one_dongle
+    artifact-name: ergonaut-one-dongle
+  - board: seeeduino_xiao_ble
     shield: settings_reset
