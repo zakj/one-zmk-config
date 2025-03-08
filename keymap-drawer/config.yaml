@@ -2,6 +2,7 @@ parse_config:
   raw_binding_map:
     "&sys_reset": Reset
     "&bootloader": Boot
+    "&shift_word": $$mdi:apple-keyboard-shift$$
     "&u_bootloader": $$tabler:progress-down$$
 
     "&kp LA(LGUI)": "⌥⌘"
