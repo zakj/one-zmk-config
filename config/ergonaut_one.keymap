@@ -83,7 +83,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-            display-name = "BASE";
+            display-name = "base";
             bindings = <
 &kp TAB        &kp Q  &kp W  &kp E     &kp R        &kp T  &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F        &kp G  &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
@@ -93,7 +93,7 @@
         };
 
         num_layer {
-            display-name = "NUM";
+            display-name = "num";
             bindings = <
 &kp GRAVE      &kp N1     &kp N2    &kp N3    &kp N4      &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp BSPC
 &mt LCTRL ESC  &kp EQUAL  &kp LBKT  &kp RBKT  &kp MINUS   &kp UNDER  &kp LBRC   &kp LPAR  &kp COLON  &kp RPAR  &kp RBRC  &kp PIPE
@@ -103,7 +103,7 @@
         };
 
         fn_layer {
-            display-name = "FN";
+            display-name = "fn";
             bindings = <
 &kp ESC    &none  &none       &none         &none         &none    &kp LS(LG(LBKT))  &none      &none      &kp LS(LG(RBKT))  &none  &kp DEL
 &kp LCTRL  &none  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp F15  &kp LEFT          &kp DOWN   &kp UP     &kp RIGHT         &none  &none
