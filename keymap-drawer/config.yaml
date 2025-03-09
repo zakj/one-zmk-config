@@ -18,8 +18,8 @@ parse_config:
 
   zmk_combos:
     space_hold: {align: bottom}
-    l_cmd_opt: {align: top}
-    r_cmd_opt: {align: top}
+    l_cmd_opt: {align: top, hidden: true}
+    r_cmd_opt: {align: top, hidden: true}
 
   zmk_keycode_map:
     LGUI: $$mdi:apple-keyboard-command$$
