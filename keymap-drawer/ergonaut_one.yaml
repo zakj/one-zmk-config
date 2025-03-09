@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: ergonaut_one}
 layers:
-  BASE:
+  base:
   - $$tabler:arrow-bar-to-right$$
   - Q
   - W
@@ -39,11 +39,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - NUM
-  - {t: '$$tabler:corner-down-left$$', h: FN}
+  - num
+  - {t: '$$tabler:corner-down-left$$', h: fn}
   - $$tabler:space$$
   - $$mdi:apple-keyboard-option$$
-  NUM:
+  num:
   - '`'
   - '1'
   - '2'
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  FN:
+  fn:
   - ESC
   - ''
   - ''
@@ -129,96 +129,10 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ADJ:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$tabler:bluetooth-x$$
-  - {t: '$$tabler:bluetooth$$', h: '0'}
-  - {t: '$$tabler:bluetooth$$', h: '1'}
-  - {t: '$$tabler:bluetooth$$', h: '2'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$tabler:bluetooth$$', h: '2'}
-  - {t: '$$tabler:bluetooth$$', h: '1'}
-  - {t: '$$tabler:bluetooth$$', h: '0'}
-  - $$tabler:bluetooth-x$$
-  - $$tabler:progress-down$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$tabler:progress-down$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SYM:
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '['
-  - +
-  - '7'
-  - '8'
-  - '9'
-  - '|'
-  - $$tabler:backspace$$
-  - {t: ESC, h: '$$mdi:apple-keyboard-control$$'}
-  - '{'
-  - (
-  - ':'
-  - )
-  - '}'
-  - '='
-  - '4'
-  - '5'
-  - '6'
-  - '-'
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - ']'
-  - _
-  - '1'
-  - '2'
-  - '3'
-  - \
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '0', h: FN}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [24, 37]
   k: $$tabler:space$$
-  l: [BASE]
+  l: [base]
   a: bottom
 - p: [16, 15]
   k: $$mdi:apple-keyboard-command$$
@@ -227,6 +141,7 @@ combos:
 - p: [14, 15, 16]
   k: ⌥⌘
   a: top
+  hidden: true
 - p: [19, 20]
   k: $$mdi:apple-keyboard-command$$
 - p: [20, 21]
@@ -234,9 +149,10 @@ combos:
 - p: [19, 20, 21]
   k: ⌘⌥
   a: top
+  hidden: true
 - p: [36, 37]
   k: $$tabler:progress-down$$
-  l: [NUM]
+  l: [num]
 - p: [41, 40]
   k: $$tabler:progress-down$$
-  l: [FN]
+  l: [fn]
