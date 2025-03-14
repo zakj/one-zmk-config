@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &lt { tapping-term-ms = <150>; };
@@ -18,36 +17,42 @@
             bindings = <&kp LGUI>;
             key-positions = <16 15>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         l_opt {
             bindings = <&kp LALT>;
             key-positions = <15 14>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         l_cmd_opt {
             bindings = <&kp LA(LGUI)>;
             key-positions = <14 15 16>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         r_cmd {
             bindings = <&kp RGUI>;
             key-positions = <19 20>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         r_opt {
             bindings = <&kp RALT>;
             key-positions = <20 21>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         r_cmd_opt {
             bindings = <&kp RA(RGUI)>;
             key-positions = <19 20 21>;
             require-prior-idle-ms = <50>;
+            timeout-ms = <20>;
         };
 
         l_boot {
