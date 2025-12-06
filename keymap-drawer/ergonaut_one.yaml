@@ -39,12 +39,55 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-shift$$
-  - num
-  - {t: '$$tabler:corner-down-left$$', h: fn}
+  - sym
+  - {t: '$$tabler:corner-down-left$$', h: num}
   - $$tabler:space$$
   - $$mdi:apple-keyboard-option$$
-  num:
+  sym:
+  - {t: ▽, type: trans}
   - '`'
+  - '@'
+  - '-'
+  - $
+  - '%'
+  - ^
+  - '#'
+  - _
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
+  - '['
+  - ']'
+  - '*'
+  - '&'
+  - (
+  - )
+  - ':'
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
+  - '!'
+  - +
+  - '='
+  - /
+  - '|'
+  - \
+  - <
+  - '>'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -55,74 +98,31 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$tabler:backspace$$
-  - {t: ESC, h: '$$mdi:apple-keyboard-control$$'}
-  - '='
-  - '['
-  - ']'
-  - '-'
-  - _
-  - '{'
-  - (
-  - ':'
-  - )
-  - '}'
-  - '|'
-  - $$mdi:apple-keyboard-shift$$
-  - +
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - '!'
-  - \
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  fn:
-  - ESC
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PREV TAB
-  - ''
-  - ''
-  - NEXT TAB
-  - ''
   - $$tabler:square-x$$
   - $$mdi:apple-keyboard-control$$
   - ''
-  - $$tabler:volume-3$$
-  - $$tabler:volume-2$$
-  - $$tabler:volume$$
-  - $$tabler:brightness-up$$
+  - ''
+  - PG UP
+  - PG DN
+  - ''
   - $$tabler:arrow-left$$
   - $$tabler:arrow-down$$
   - $$tabler:arrow-up$$
   - $$tabler:arrow-right$$
   - ''
   - ''
-  - $$mdi:apple-keyboard-shift$$
-  - ''
-  - $$tabler:player-skip-back$$
-  - $$tabler:player-play$$
-  - $$tabler:player-skip-forward$$
-  - $$tabler:brightness-down$$
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - ''
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,7 +152,7 @@ combos:
   hidden: true
 - p: [36, 37]
   k: $$tabler:progress-down$$
-  l: [num]
+  l: [sym]
 - p: [41, 40]
   k: $$tabler:progress-down$$
-  l: [fn]
+  l: [num]
